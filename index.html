@@ -8,44 +8,56 @@
 </head>
 <body>
     <header>
-        <h1>Gabriela L. Pandori</h1>
-        <h2>Aluna do IFSP-Campus Bragança Paulista </h2>
+        <h1 id="titulos">Gabriela L. Pandori</h1>
+        <h2 id="subtitulo_principal">Aluna do IFSP-Campus Bragança Paulista</h2>
     </header>
-    <main>
-        <section> 
+    <main id="conteudo">
+        <section id="detalhes">
             <h2>Detalhes</h2>
             <ul>
                 <li>Nome: Gabriela Lopes Pandori</li>
-                <li>Idade: 15 anos.</li>
+                <li>Idade: 16 anos.</li>
                 <li>Local: Bragança Paulista-SP.</li>
             </ul>
-
-            <img src="Imagens/icone facebook.png" alt="Icone do facebook" class="icones">
-            <img src="Imagens/icone_twitter.png" alt="Icone do Twitter" class="icones">
-            <img src="Imagens/icone_instagram.png" alt="Icone do icone_instagram" class="icones">
-           
-
+            <div class="icones1">
+                <img src="Imagens/icone facebook.png" alt="Icone do facebook" class="icones">
+                <img src="Imagens/icone_twitter.png" alt="Icone do Twitter" class="icones">
+                <img src="Imagens/icone_instagram.png" alt="Icone do icone_instagram" class="icones">
+            </div>
         </section>
 
         <section>
-            <h2>Sobre mim </h2>
+            <h2 id="sobre_mim">Sobre mim </h2>
             <p>Sou uma desenvolvedora web que tem como objetivo unir ideias complexas com a arte da programação, buscando, também promover soluções práticas para o dia a dia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam consequatur magni hic numquam vel aperiam ad laboriosam nobis et voluptatibus reprehenderit ratione reiciendis fuga minus laudantium recusandae pariatur, harum accusantium?</p>
-            <button>Contate-me</button> 
-            <br><br>
-            <img src="Imagens/imagem do perfil.jpg" alt="Foto de perfil" id="foto">
+            <div id="fora_botao">
+                <button id="botao">Contate-me</button>
+            </div>
         </section>
 
-        <section>
+        <section id="cor_fundo">
+            <div id="foto_perfil">
+                <img src="Imagens/imagem do perfil.jpg" alt="Foto de perfil" id="foto">
+            </div>
             <h2>Olá, eu sou Gabriela</h2>
-            <p>Tenho como principal objetivo unir minhas ideias com meus conhecimentos referentess a programação possibilitando a criação de sites estrturados. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi nihil voluptate a ipsam est inventore, alias autem, illum voluptatibus culpa maxime, optio at accusantium deleniti in dolorem accusamus facere. </p>
+            <p>Tenho como principal objetivo unir minhas ideias com meus conhecimentos referentess a programação possibilitando a criação de sites estrturados. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi nihil voluptate a ipsam est inventore, alias autem, illum voluptatibus culpa maxime, optio at accusantium deleniti in dolorem accusamus facere.</p>
+
+            <div class="icones1">
+                <img src="Imagens/icone facebook.png" alt="Icone do Facebook" class="icones">
+                <img src="Imagens/icone_twitter.png" alt="Icone do Twitter" class="icones">
+                <img src="Imagens/icone_instagram.png" alt="Icone do Instagram" class="icones">
+                <img src="Imagens/img_linked.jpg" alt="Icone Linkedin" class="icones">
+            </div>
         </section>
-        <img src="Imagens/icone facebook.png" alt="Icone do Facebook" class="icones">
-        <img src="Imagens/icone_twitter.png" alt="Icone do Twitter" class="icones">
-        <img src="Imagens/icone_instagram.png" alt="Icone do Instagram" class="icones">
-        <img src="Imagens/icone_linkedin.jpg" alt="Icone Linkedin" class="icones">
-        
+        <button id="toggleMode" onclick="toggleDarkMode()">Alternar Modo</button>
     </main>
-    <footer><strong>Direitos Reservados</strong></footer> 
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+    <footer id="final_pag"></footer>
+
     
 </body>
 </html>

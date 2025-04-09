@@ -1,6 +1,129 @@
-.icones{
-    height: 30px;
+
+body.dark-mode {
+    background-color: #121212; 
+    color:white; 
 }
-#foto{
-    height: 150px;
+
+#titulos {
+    text-align: center;
+    color: rgb(255, 165, 185); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#subtitulo_principal{
+    text-align: center;
+}
+
+.icones {
+    height: 30px;
+    color: black;
+}
+
+.icones1 {
+    height: 30px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#foto_perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#cor_fundo {
+    background-color: rgb(238, 83, 199); 
+}
+#detalhes{
+    background-color: rgb(238, 83, 199);
+}
+
+#conteudo section {
+    width: 300px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    
+}
+
+main#conteudo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#botao {
+    border: 5px solid rgb(255, 145, 249);
+    border-radius: 20px;
+    padding: 10px 26px;
+    background-color:rgb(249, 180, 255);
+    color: white; 
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+#botao:hover {
+    background-color: rgb(255, 145, 249);
+    border-color:rgb(249, 180, 255);
+}
+
+#fora_botao {
+    text-align: center;
+}
+
+#sobre_mim {
+    text-align: center;
+}
+
+#final_pag {
+    background-color: #333;
+    color: #EAEAEA;
+}
+
+
+.icones1 img {
+    filter: brightness(0) invert(1); 
+}
+
+#toggleMode {
+    height: 50px;
+    padding: 5px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toggleMode:hover {
+    background-color:rgb(249, 180, 255);
+}
+
+.social-icon{
+    color: black;
+}
+.dark-mode .social-icon{
+    color: white;
 }
